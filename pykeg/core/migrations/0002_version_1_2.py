@@ -77,6 +77,7 @@ class Migration(migrations.Migration):
             field=models.CharField(default=b'available', help_text=b'Current keg state.', max_length=32, choices=[(b'available', b'Available'), (b'on_tap', b'On tap'), (b'finished', b'Finished')]),
             preserve_default=True,
         ),
+        migrations.RunSQL('COMMIT;'),
         migrations.RunPython(set_initial_status),
         migrations.RemoveField(
             model_name='keg',
