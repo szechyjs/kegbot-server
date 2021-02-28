@@ -147,6 +147,8 @@ CACHES = {
     }
 }
 
+CELERY_REDIS_MAX_CONNECTIONS = 5
+
 INTERNAL_IPS = ("127.0.0.1",)
 
 # Set to true if the database admin module should be enabled.
