@@ -54,6 +54,8 @@ addict = "*"
 kegbot-api = "*"
 gevent = "*"
 psycopg2 = "*"
+boto3 = "^1.17.17"
+django-storages = "^1.11.1"
 
 [tool.poetry.dev-dependencies]
 black = "*"

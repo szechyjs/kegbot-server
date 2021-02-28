@@ -251,7 +251,7 @@ EMAIL_SUBJECT_PREFIX = ""
 IMAGEKIT_DEFAULT_IMAGE_CACHE_BACKEND = "imagekit.imagecache.NonValidatingImageCacheBackend"
 
 # Storage
-DEFAULT_FILE_STORAGE = "pykeg.web.kegweb.kbstorage.KegbotFileSystemStorage"
+DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 
 from pykeg.core.util import get_plugin_template_dirs
 

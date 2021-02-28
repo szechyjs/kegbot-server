@@ -7,7 +7,8 @@ ENV SHELL=/bin/sh \
    PIP_NO_CACHE_DIR=1 \
    KEGBOT_DATA_DIR=/kegbot-data \
    KEGBOT_IN_DOCKER=True \
-   KEGBOT_ENV=debug
+   KEGBOT_ENV=debug \
+   CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
 RUN apk update && \
     apk add --no-cache \
